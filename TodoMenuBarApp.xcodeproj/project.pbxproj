@@ -18,6 +18,11 @@
 		9AFE43CE19C4483F0016B35B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFE43AD19C4483F0016B35B /* Cocoa.framework */; };
 		9AFE43D619C4483F0016B35B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43D419C4483F0016B35B /* InfoPlist.strings */; };
 		9AFE43D819C4483F0016B35B /* TodoMenuBarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE43D719C4483F0016B35B /* TodoMenuBarAppTests.m */; };
+		9AFE43EE19C4C1AB0016B35B /* blue_gem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43E919C4C1AB0016B35B /* blue_gem.png */; };
+		9AFE43EF19C4C1AB0016B35B /* yellow_gem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43EA19C4C1AB0016B35B /* yellow_gem.png */; };
+		9AFE43F019C4C1AB0016B35B /* green_gem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43EB19C4C1AB0016B35B /* green_gem.png */; };
+		9AFE43F119C4C1AB0016B35B /* red_gem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43EC19C4C1AB0016B35B /* red_gem.png */; };
+		9AFE43F219C4C1AB0016B35B /* colored_gems.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43ED19C4C1AB0016B35B /* colored_gems.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		9AFE43D319C4483F0016B35B /* TodoMenuBarAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoMenuBarAppTests-Info.plist"; sourceTree = "<group>"; };
 		9AFE43D519C4483F0016B35B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9AFE43D719C4483F0016B35B /* TodoMenuBarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoMenuBarAppTests.m; sourceTree = "<group>"; };
+		9AFE43E919C4C1AB0016B35B /* blue_gem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_gem.png; sourceTree = "<group>"; };
+		9AFE43EA19C4C1AB0016B35B /* yellow_gem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_gem.png; sourceTree = "<group>"; };
+		9AFE43EB19C4C1AB0016B35B /* green_gem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_gem.png; sourceTree = "<group>"; };
+		9AFE43EC19C4C1AB0016B35B /* red_gem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_gem.png; sourceTree = "<group>"; };
+		9AFE43ED19C4C1AB0016B35B /* colored_gems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored_gems.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,11 @@
 		9AFE43B419C4483F0016B35B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9AFE43E919C4C1AB0016B35B /* blue_gem.png */,
+				9AFE43EA19C4C1AB0016B35B /* yellow_gem.png */,
+				9AFE43EB19C4C1AB0016B35B /* green_gem.png */,
+				9AFE43EC19C4C1AB0016B35B /* red_gem.png */,
+				9AFE43ED19C4C1AB0016B35B /* colored_gems.png */,
 				9AFE43B519C4483F0016B35B /* TodoMenuBarApp-Info.plist */,
 				9AFE43B619C4483F0016B35B /* InfoPlist.strings */,
 				9AFE43B919C4483F0016B35B /* main.m */,
@@ -231,9 +246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AFE43B819C4483F0016B35B /* InfoPlist.strings in Resources */,
+				9AFE43F119C4C1AB0016B35B /* red_gem.png in Resources */,
 				9AFE43C619C4483F0016B35B /* Images.xcassets in Resources */,
+				9AFE43EE19C4C1AB0016B35B /* blue_gem.png in Resources */,
+				9AFE43EF19C4C1AB0016B35B /* yellow_gem.png in Resources */,
 				9AFE43BE19C4483F0016B35B /* Credits.rtf in Resources */,
+				9AFE43F219C4C1AB0016B35B /* colored_gems.png in Resources */,
 				9AFE43C419C4483F0016B35B /* MainMenu.xib in Resources */,
+				9AFE43F019C4C1AB0016B35B /* green_gem.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

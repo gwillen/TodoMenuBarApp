@@ -8,7 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+typedef enum {
+    GEM_COLOR_RED,
+    GEM_COLOR_YELLOW,
+    GEM_COLOR_GREEN,
+    GEM_COLOR_BLUE,
+    GEM_COLOR_OVERFLOW
+} gem_color_t;
+
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSMenu *statusMenu;
+    NSStatusItem *statusItem;
+    gem_color_t gem_color;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
