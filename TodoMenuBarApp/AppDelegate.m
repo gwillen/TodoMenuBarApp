@@ -19,12 +19,12 @@ static NSArray *todoItems;
 -(void)awakeFromNib {
     statusMenu = [[NSMenu alloc] init];
     todoItems = @[
-                  @"one",
-                  @"two"
+                  @"Beeminder",
+                  @"HabitRPG"
                   ];
     
     for (NSString *item in todoItems) {
-        NSMenuItem* newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:item action:@selector(cycleGemColor) keyEquivalent:@""];
+        NSMenuItem* newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:item action:@selector(menuItemClick:) keyEquivalent:@""];
         //[newItem setEnabled:YES];
         [statusMenu insertItem:newItem atIndex: [[statusMenu itemArray] count]];
     }
@@ -45,6 +45,11 @@ static NSArray *todoItems;
     NSFileManager *fm = [NSFileManager defaultManager];
     NSDictionary *todofile = [fm attributesOfItemAtPath:@"/Users/gwillen/todogem" error:nil];
     NSDate *todofile_mod = [todofile fileModificationDate];
+}
+
+-(void)menuItemClick:(id)sender {
+    NSLog(@"CLICK SENDER IS %@ (%@)", sender, [sender title]);
+    [sender setTitle:[[sender title] stringByAppendingString:@" *"]];
 }
 
 -(void)cycleGemColor {
@@ -71,9 +76,9 @@ static NSArray *todoItems;
             break;
     }
     
-    NSLog(@"about to cycle color to %@", color_file);
+    //NSLog(@"about to cycle color to %@", color_file);
     [statusItem setImage:[NSImage imageNamed:color_file]];
-    NSLog(@"did cycle color to %@", color_file);
+    //NSLog(@"did cycle color to %@", color_file);
 }
 
 @end
