@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AFE43AE19C4483F0016B35B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFE43AD19C4483F0016B35B /* Cocoa.framework */; };
+		9AFE43B819C4483F0016B35B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43B619C4483F0016B35B /* InfoPlist.strings */; };
+		9AFE43BA19C4483F0016B35B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE43B919C4483F0016B35B /* main.m */; };
+		9AFE43BE19C4483F0016B35B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43BC19C4483F0016B35B /* Credits.rtf */; };
+		9AFE43C119C4483F0016B35B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE43C019C4483F0016B35B /* AppDelegate.m */; };
+		9AFE43C419C4483F0016B35B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43C219C4483F0016B35B /* MainMenu.xib */; };
+		9AFE43C619C4483F0016B35B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43C519C4483F0016B35B /* Images.xcassets */; };
+		9AFE43CD19C4483F0016B35B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFE43CC19C4483F0016B35B /* XCTest.framework */; };
+		9AFE43CE19C4483F0016B35B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFE43AD19C4483F0016B35B /* Cocoa.framework */; };
+		9AFE43D619C4483F0016B35B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43D419C4483F0016B35B /* InfoPlist.strings */; };
+		9AFE43D819C4483F0016B35B /* TodoMenuBarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE43D719C4483F0016B35B /* TodoMenuBarAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AFE43CF19C4483F0016B35B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AFE43A219C4483F0016B35B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFE43A919C4483F0016B35B;
+			remoteInfo = TodoMenuBarApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AFE43AA19C4483F0016B35B /* TodoMenuBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoMenuBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFE43AD19C4483F0016B35B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9AFE43B019C4483F0016B35B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9AFE43B119C4483F0016B35B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9AFE43B219C4483F0016B35B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AFE43B519C4483F0016B35B /* TodoMenuBarApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoMenuBarApp-Info.plist"; sourceTree = "<group>"; };
+		9AFE43B719C4483F0016B35B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AFE43B919C4483F0016B35B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AFE43BB19C4483F0016B35B /* TodoMenuBarApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoMenuBarApp-Prefix.pch"; sourceTree = "<group>"; };
+		9AFE43BD19C4483F0016B35B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9AFE43BF19C4483F0016B35B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AFE43C019C4483F0016B35B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AFE43C319C4483F0016B35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9AFE43C519C4483F0016B35B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9AFE43CB19C4483F0016B35B /* TodoMenuBarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoMenuBarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFE43CC19C4483F0016B35B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9AFE43D319C4483F0016B35B /* TodoMenuBarAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoMenuBarAppTests-Info.plist"; sourceTree = "<group>"; };
+		9AFE43D519C4483F0016B35B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AFE43D719C4483F0016B35B /* TodoMenuBarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoMenuBarAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AFE43A719C4483F0016B35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFE43AE19C4483F0016B35B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFE43C819C4483F0016B35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFE43CE19C4483F0016B35B /* Cocoa.framework in Frameworks */,
+				9AFE43CD19C4483F0016B35B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AFE43A119C4483F0016B35B = {
+			isa = PBXGroup;
+			children = (
+				9AFE43B319C4483F0016B35B /* TodoMenuBarApp */,
+				9AFE43D119C4483F0016B35B /* TodoMenuBarAppTests */,
+				9AFE43AC19C4483F0016B35B /* Frameworks */,
+				9AFE43AB19C4483F0016B35B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AFE43AB19C4483F0016B35B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43AA19C4483F0016B35B /* TodoMenuBarApp.app */,
+				9AFE43CB19C4483F0016B35B /* TodoMenuBarAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AFE43AC19C4483F0016B35B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43AD19C4483F0016B35B /* Cocoa.framework */,
+				9AFE43CC19C4483F0016B35B /* XCTest.framework */,
+				9AFE43AF19C4483F0016B35B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AFE43AF19C4483F0016B35B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43B019C4483F0016B35B /* AppKit.framework */,
+				9AFE43B119C4483F0016B35B /* CoreData.framework */,
+				9AFE43B219C4483F0016B35B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9AFE43B319C4483F0016B35B /* TodoMenuBarApp */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43BF19C4483F0016B35B /* AppDelegate.h */,
+				9AFE43C019C4483F0016B35B /* AppDelegate.m */,
+				9AFE43C219C4483F0016B35B /* MainMenu.xib */,
+				9AFE43C519C4483F0016B35B /* Images.xcassets */,
+				9AFE43B419C4483F0016B35B /* Supporting Files */,
+			);
+			path = TodoMenuBarApp;
+			sourceTree = "<group>";
+		};
+		9AFE43B419C4483F0016B35B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43B519C4483F0016B35B /* TodoMenuBarApp-Info.plist */,
+				9AFE43B619C4483F0016B35B /* InfoPlist.strings */,
+				9AFE43B919C4483F0016B35B /* main.m */,
+				9AFE43BB19C4483F0016B35B /* TodoMenuBarApp-Prefix.pch */,
+				9AFE43BC19C4483F0016B35B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AFE43D119C4483F0016B35B /* TodoMenuBarAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43D719C4483F0016B35B /* TodoMenuBarAppTests.m */,
+				9AFE43D219C4483F0016B35B /* Supporting Files */,
+			);
+			path = TodoMenuBarAppTests;
+			sourceTree = "<group>";
+		};
+		9AFE43D219C4483F0016B35B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE43D319C4483F0016B35B /* TodoMenuBarAppTests-Info.plist */,
+				9AFE43D419C4483F0016B35B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AFE43A919C4483F0016B35B /* TodoMenuBarApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFE43DB19C4483F0016B35B /* Build configuration list for PBXNativeTarget "TodoMenuBarApp" */;
+			buildPhases = (
+				9AFE43A619C4483F0016B35B /* Sources */,
+				9AFE43A719C4483F0016B35B /* Frameworks */,
+				9AFE43A819C4483F0016B35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoMenuBarApp;
+			productName = TodoMenuBarApp;
+			productReference = 9AFE43AA19C4483F0016B35B /* TodoMenuBarApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AFE43CA19C4483F0016B35B /* TodoMenuBarAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFE43DE19C4483F0016B35B /* Build configuration list for PBXNativeTarget "TodoMenuBarAppTests" */;
+			buildPhases = (
+				9AFE43C719C4483F0016B35B /* Sources */,
+				9AFE43C819C4483F0016B35B /* Frameworks */,
+				9AFE43C919C4483F0016B35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AFE43D019C4483F0016B35B /* PBXTargetDependency */,
+			);
+			name = TodoMenuBarAppTests;
+			productName = TodoMenuBarAppTests;
+			productReference = 9AFE43CB19C4483F0016B35B /* TodoMenuBarAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AFE43A219C4483F0016B35B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					9AFE43CA19C4483F0016B35B = {
+						TestTargetID = 9AFE43A919C4483F0016B35B;
+					};
+				};
+			};
+			buildConfigurationList = 9AFE43A519C4483F0016B35B /* Build configuration list for PBXProject "TodoMenuBarApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AFE43A119C4483F0016B35B;
+			productRefGroup = 9AFE43AB19C4483F0016B35B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AFE43A919C4483F0016B35B /* TodoMenuBarApp */,
+				9AFE43CA19C4483F0016B35B /* TodoMenuBarAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AFE43A819C4483F0016B35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFE43B819C4483F0016B35B /* InfoPlist.strings in Resources */,
+				9AFE43C619C4483F0016B35B /* Images.xcassets in Resources */,
+				9AFE43BE19C4483F0016B35B /* Credits.rtf in Resources */,
+				9AFE43C419C4483F0016B35B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFE43C919C4483F0016B35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFE43D619C4483F0016B35B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AFE43A619C4483F0016B35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFE43C119C4483F0016B35B /* AppDelegate.m in Sources */,
+				9AFE43BA19C4483F0016B35B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFE43C719C4483F0016B35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFE43D819C4483F0016B35B /* TodoMenuBarAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AFE43D019C4483F0016B35B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AFE43A919C4483F0016B35B /* TodoMenuBarApp */;
+			targetProxy = 9AFE43CF19C4483F0016B35B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AFE43B619C4483F0016B35B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFE43B719C4483F0016B35B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AFE43BC19C4483F0016B35B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFE43BD19C4483F0016B35B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9AFE43C219C4483F0016B35B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFE43C319C4483F0016B35B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9AFE43D419C4483F0016B35B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFE43D519C4483F0016B35B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AFE43D919C4483F0016B35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AFE43DA19C4483F0016B35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AFE43DC19C4483F0016B35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TodoMenuBarApp/TodoMenuBarApp-Prefix.pch";
+				INFOPLIST_FILE = "TodoMenuBarApp/TodoMenuBarApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9AFE43DD19C4483F0016B35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TodoMenuBarApp/TodoMenuBarApp-Prefix.pch";
+				INFOPLIST_FILE = "TodoMenuBarApp/TodoMenuBarApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9AFE43DF19C4483F0016B35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TodoMenuBarApp.app/Contents/MacOS/TodoMenuBarApp";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TodoMenuBarApp/TodoMenuBarApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TodoMenuBarAppTests/TodoMenuBarAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9AFE43E019C4483F0016B35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TodoMenuBarApp.app/Contents/MacOS/TodoMenuBarApp";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TodoMenuBarApp/TodoMenuBarApp-Prefix.pch";
+				INFOPLIST_FILE = "TodoMenuBarAppTests/TodoMenuBarAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AFE43A519C4483F0016B35B /* Build configuration list for PBXProject "TodoMenuBarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFE43D919C4483F0016B35B /* Debug */,
+				9AFE43DA19C4483F0016B35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFE43DB19C4483F0016B35B /* Build configuration list for PBXNativeTarget "TodoMenuBarApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFE43DC19C4483F0016B35B /* Debug */,
+				9AFE43DD19C4483F0016B35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AFE43DE19C4483F0016B35B /* Build configuration list for PBXNativeTarget "TodoMenuBarAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFE43DF19C4483F0016B35B /* Debug */,
+				9AFE43E019C4483F0016B35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AFE43A219C4483F0016B35B /* Project object */;
+}
