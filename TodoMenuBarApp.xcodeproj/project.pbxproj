@@ -23,6 +23,7 @@
 		9AFE43F019C4C1AB0016B35B /* green_gem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43EB19C4C1AB0016B35B /* green_gem.png */; };
 		9AFE43F119C4C1AB0016B35B /* red_gem.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43EC19C4C1AB0016B35B /* red_gem.png */; };
 		9AFE43F219C4C1AB0016B35B /* colored_gems.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AFE43ED19C4C1AB0016B35B /* colored_gems.png */; };
+		9AFE43F519C632E10016B35B /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE43F419C632E10016B35B /* TodoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		9AFE43EB19C4C1AB0016B35B /* green_gem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_gem.png; sourceTree = "<group>"; };
 		9AFE43EC19C4C1AB0016B35B /* red_gem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_gem.png; sourceTree = "<group>"; };
 		9AFE43ED19C4C1AB0016B35B /* colored_gems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colored_gems.png; sourceTree = "<group>"; };
+		9AFE43F319C632E10016B35B /* TodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoItem.h; sourceTree = "<group>"; };
+		9AFE43F419C632E10016B35B /* TodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				9AFE43C219C4483F0016B35B /* MainMenu.xib */,
 				9AFE43C519C4483F0016B35B /* Images.xcassets */,
 				9AFE43B419C4483F0016B35B /* Supporting Files */,
+				9AFE43F319C632E10016B35B /* TodoItem.h */,
+				9AFE43F419C632E10016B35B /* TodoItem.m */,
 			);
 			path = TodoMenuBarApp;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AFE43C119C4483F0016B35B /* AppDelegate.m in Sources */,
+				9AFE43F519C632E10016B35B /* TodoItem.m in Sources */,
 				9AFE43BA19C4483F0016B35B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

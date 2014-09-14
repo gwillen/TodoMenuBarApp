@@ -3,14 +3,16 @@
 //  TodoMenuBarApp
 //
 //  Created by Glenn Willen on 9/13/14.
-//  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
+//  Copyright (c) 2014 Glenn Willen. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "TodoItem.h"
 
 @implementation AppDelegate
 
-static NSArray *todoItems;
+static NSArray *todoTitles;
+static NSMutableArray *todoItems;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
@@ -18,67 +20,47 @@ static NSArray *todoItems;
 
 -(void)awakeFromNib {
     statusMenu = [[NSMenu alloc] init];
-    todoItems = @[
+    todoTitles = @[
                   @"Beeminder",
                   @"HabitRPG"
                   ];
     
-    for (NSString *item in todoItems) {
-        NSMenuItem* newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:item action:@selector(menuItemClick:) keyEquivalent:@""];
-        //[newItem setEnabled:YES];
-        [statusMenu insertItem:newItem atIndex: [[statusMenu itemArray] count]];
+    todoItems = [[NSMutableArray alloc] init];
+    
+    for (NSString *item in todoTitles) {
+        TodoItem *newItem = [[TodoItem alloc] init];
+        [todoItems addObject:newItem];
+        newItem.menuItem = [[NSMenuItem alloc] initWithTitle:item action:@selector(menuItemClick:) keyEquivalent:@""];
+        newItem.title = item;
+        newItem.color = GEM_COLOR_RED;
+        [newItem.menuItem setRepresentedObject:newItem];
+        [statusMenu insertItem:newItem.menuItem atIndex: [[statusMenu itemArray] count]];
     }
     
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     [statusItem setMenu:statusMenu];
-    //[statusItem setTitle:@"Status"];
     [statusItem setHighlightMode:YES];
-    
-    [NSTimer scheduledTimerWithTimeInterval:1.0
-                                     target:self
-                                   selector:@selector(cycleGemColor)
-                                   userInfo:nil
-                                    repeats:YES];
-    
-    [self cycleGemColor];
-    
-    NSFileManager *fm = [NSFileManager defaultManager];
-    NSDictionary *todofile = [fm attributesOfItemAtPath:@"/Users/gwillen/todogem" error:nil];
-    NSDate *todofile_mod = [todofile fileModificationDate];
+    [statusItem setImage:[TodoItem imageForColor:GEM_COLOR_RED]];
 }
 
--(void)menuItemClick:(id)sender {
-    NSLog(@"CLICK SENDER IS %@ (%@)", sender, [sender title]);
-    [sender setTitle:[[sender title] stringByAppendingString:@" *"]];
+-(void)menuItemClick:(NSMenuItem *)sender {
+    TodoItem *t = [sender representedObject];
+    NSLog(@"CLICK SENDER IS %@ (%@)", t, sender);
+    t.color = [TodoItem nextColorAfter:t.color];
+    
+    gem_color_t leastColor = GEM_COLOR_BLUE;
+    for (TodoItem *item in todoItems) {
+        if (item.color < leastColor) {
+            leastColor = item.color;
+        }
+    }
+    
+    [statusItem setImage:[TodoItem imageForColor:leastColor]];
 }
 
 -(void)cycleGemColor {
-    gem_color++;
-    if (gem_color == GEM_COLOR_OVERFLOW) {
-        gem_color = 0;
-    }
-    
-    NSString *color_file = @"";
-    switch (gem_color) {
-        case GEM_COLOR_RED:
-            color_file = @"red_gem.png";
-            break;
-        case GEM_COLOR_YELLOW:
-            color_file = @"yellow_gem.png";
-            break;
-        case GEM_COLOR_GREEN:
-            color_file = @"green_gem.png";
-            break;
-        case GEM_COLOR_BLUE:
-            color_file = @"blue_gem.png";
-            break;
-        default:
-            break;
-    }
-    
-    //NSLog(@"about to cycle color to %@", color_file);
-    [statusItem setImage:[NSImage imageNamed:color_file]];
-    //NSLog(@"did cycle color to %@", color_file);
+    gemColor = [TodoItem nextColorAfter:gemColor];
+    [statusItem setImage:[TodoItem imageForColor:gemColor]];
 }
 
 @end
