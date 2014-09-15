@@ -21,9 +21,11 @@ static NSMutableArray *todoItems;
 -(void)awakeFromNib {
     statusMenu = [[NSMenu alloc] init];
     todoTitles = @[
-                  @"Beeminder",
-                  @"HabitRPG"
-                  ];
+                   @"GCal (no remaining events)",
+                   @"Beeminder (no red goals)",
+                   @"HabitRPG (complete all dailies)",
+                   @"Notebook (cycle through all pages)"
+                   ];
     
     todoItems = [[NSMutableArray alloc] init];
     
